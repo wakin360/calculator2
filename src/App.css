@@ -40,6 +40,11 @@
   font-variant-numeric: tabular-nums;
 }
 
+.Display.nameDisplay {
+  font-size: clamp(1.2rem, 5vw, 1.7rem);
+  letter-spacing: -0.03em;
+}
+
 .Keypad {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -98,6 +103,21 @@
 
 .Button.accent:hover {
   background: #485dbd;
+}
+
+.Button.name {
+  width: 100%;
+  min-height: 48px;
+  margin-top: 12px;
+  border-color: #dfe3ed;
+  background: #fff;
+  color: #596ed0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.Button.name:hover {
+  background: #f0f2fa;
 }
 
 .Button:focus-visible {
